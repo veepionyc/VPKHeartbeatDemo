@@ -1,4 +1,9 @@
-
+//
+//  VPKAnalyticsModel.m
+//  VPKHeartbeatDemo
+//
+//  Copyright © 2018 VEEPIO LLC. All rights reserved.
+//
 #import "VPKAnalyticsModel.h"
 #import <AdobeVideoHeartbeatSDK/ADBMediaHeartbeat.h>
 

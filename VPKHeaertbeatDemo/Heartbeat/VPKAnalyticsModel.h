@@ -1,5 +1,5 @@
 //
-//  VideoAnalyticsProvider.h
+//  VPKAnalyticsModel.h
 //  VPKHeartbeatDemo
 //
 //  Copyright © 2018 VEEPIO LLC. All rights reserved.
