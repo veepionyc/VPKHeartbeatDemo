@@ -9,7 +9,7 @@ Demo app using VPKit and VPKHeartbeat frameworks to send Adobe Video Heartbeat a
 
 `AdobeVideoHeartbeatSDK 2.0.1`  
 `AdobeMobileSDK 4.8.4`  
-
+ 
 (install using the included Cocoapods Podfile)
 
 
@@ -55,10 +55,10 @@ Removes the current session and stops listening for NSNotifications. Not require
 #
 
 
-###Integrating VPKHeartbeat with a host app
-Check out the demo app included here.
+## Integrating VPKHeartbeat with a host app
+Check out the VPKHeartbeatDemo app included here.
 
-`initializeHeartbeat:` is sent once in the App Delegate.
+`initializeHeartbeat:` is sent once - typically in the App Delegate.
 
 
 `createSession:mediaObject:` should only be sent when a `VeepViewer` with video content will appear. A good place to do this is in the `VPKPreview` `passThroughDelegate` method:
