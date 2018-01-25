@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <VPKit/VPKit.h>
 #import <VPKHeartbeat/VPKHeartbeat.h>
-#import "VideoAnalyticsProvider.h"
+#import "VPKAnalyticsModel.h"
 
 
 //optional for IDFA support
@@ -24,32 +24,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    [VPKHeartbeatProvider initializeHeartbeat: [VideoAnalyticsProvider heartbeatConfig]];
+    ADBMediaHeartbeatConfig* config = VPKAnalyticsModel.heartbeatConfig;
+    [VPKHeartbeatProvider initializeHeartbeat:config];
     
     [VPKHeartbeatProvider setDebugLogging:YES];
     
     
 
+
     /*
-     
      APP CREDENTIALS: required
-     
      These app credentials are for testing purposes only.
      To obtain credentials unique to your app visit the VEEPIO developer portal
      https://developer.veep.io
-     
+     */
     
     NSString* appId = @"VEEPIO_by_url_test_app_id";
     NSString* clientId = @"1zArpBErovQ1MjVHvigJqXwE8qt47U2Yy5XzG3CP";
     NSString* clientSecret = @"VpLIvEetceUnHBEIf6fLUwLxELBh2QesZ6iLLiPHCesRLXfOLLJNcFfmp03wJfGaJquO3V8KqHjtvzlufuXfWWgcpWVw9wxfBJNYdZh96JHV5hk44dJbqiCqplrKcSml";
     
     
-*/
+ /*
     NSString* appId = @"VeepMaker-Eagles";
     NSString* clientId = @"XGTDTI3XGF91yoSudZmfYXuVu3ZZ5OeHM2UfCtZv";
     NSString* clientSecret = @"4LNUTdiQkakzJH4ZWWnjqiiPX2zc4IADXaLANw0UIUAD35EWbw6NVEd2tLBJKx95jTCXTjIFj4wRUCsgXjAeHb2HtUYDYSaEz3GWuK6xJO7TAS0fZPQP4AZOatMCkFi0";
-    
+    */
     
     
     

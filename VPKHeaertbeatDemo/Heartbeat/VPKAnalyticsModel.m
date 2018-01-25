@@ -1,5 +1,5 @@
 
-#import "VideoAnalyticsProvider.h"
+#import "VPKAnalyticsModel.h"
 #import <AdobeVideoHeartbeatSDK/ADBMediaHeartbeat.h>
 
 
@@ -14,9 +14,9 @@ NSString *const HEARTBEAT_APP_VERSION		= @"VHL2 Sample Player v1.0";
 
 double const VIDEO_LENGTH = 1800;
 
-@interface VideoAnalyticsProvider()
+@interface VPKAnalyticsModel()
 @end
-@implementation VideoAnalyticsProvider
+@implementation VPKAnalyticsModel
 
 #pragma mark Initializer & dealloc
 
