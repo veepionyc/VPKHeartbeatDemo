@@ -1,6 +1,16 @@
 # VPKHeartbeatDemo
-Demo app using VPKit and VPKHeartbeat frameworks
+Demo app using VPKit and VPKHeartbeat frameworks to send Adobe Video Heartbeat analyticis
 
+##Requirements
+`VPKit.framework 2.6.0`   
+`VPKHeartbeat.framework 0.1.2`   
+
+(included in this distribution)  
+
+`AdobeVideoHeartbeatSDK 2.0.1`  
+`AdobeMobileSDK 4.8.4`  
+
+(install using the included Cocoapods Podfile)
 
 
 ## VPKHeartbeat
