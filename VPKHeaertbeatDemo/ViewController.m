@@ -43,7 +43,7 @@
     NSURL* contentURL = [NSURL URLWithString:@"youtube://ITjsb22-EwQ"];
     VPKImage* vpkImage = [[VPKImage alloc] initWithImage:image url:contentURL];
     vpkImage.mediaIdentifier = @"ITjsb22-EwQ";
-    self.viewerPreview.image = image;
+    self.viewerPreview.image = vpkImage;
     
     self.mediaObject =
     [ADBMediaHeartbeat createMediaObjectWithName:@"tomcruise"
