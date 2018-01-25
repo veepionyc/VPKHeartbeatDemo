@@ -1,0 +1,6 @@
+framework module VPKHeartbeat {
+  umbrella header "VPKHeartbeat.h"
+
+  export *
+  module * { export * }
+}
