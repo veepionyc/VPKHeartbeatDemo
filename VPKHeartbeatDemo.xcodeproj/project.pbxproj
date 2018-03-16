@@ -428,14 +428,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/VPKitDemo",
 					"$(PROJECT_DIR)/VPKFrameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -450,7 +443,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.veepio.VPKHeartbeatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,14 +469,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/VPKitDemo",
 					"$(PROJECT_DIR)/VPKFrameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
-					"$(PROJECT_DIR)/Veepio\\ Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -499,7 +484,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.veepio.VPKHeartbeatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
