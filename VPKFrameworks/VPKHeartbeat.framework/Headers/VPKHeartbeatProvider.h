@@ -55,8 +55,20 @@
 /**
  Creates the current session and starts listening for NSNotifications.
  This should be recreated per media object when tracking is required.
+ 
+ @param mediaProvider
+ Object conforming to VPKHeartbeatMediaProvider protocol - passes information regarding the video player state to the heartbeat tracker.
+ 
+ @param mediaObject
+ Pre-initialised ADBMediaObject for the session
+
+ @param metadata
+ Dictionary of arbitray metadata to send with tracking events
+ 
  */
-+ (void)createSession:(nonnull id<VPKHeartbeatMediaProvider>)mediaProvider mediaObject:(nonnull ADBMediaObject*)mediaObject;
++ (void)createSession:(nonnull id<VPKHeartbeatMediaProvider>)mediaProvider
+          mediaObject:(nonnull ADBMediaObject*)mediaObject
+             metadata:(nullable NSDictionary*)metadata;
 
 /**
  Removes the current session and stops listening for NSNotifications.
