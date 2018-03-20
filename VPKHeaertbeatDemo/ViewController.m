@@ -45,6 +45,7 @@
     vpkImage.mediaIdentifier = @"ITjsb22-EwQ";
     self.viewerPreview.image = vpkImage;
     
+    //VPKMediaObject is a proxy for an ADBMediaObject.
     self.mediaObject =
     [VPKHeartbeatProvider createMediaObjectWithName:@"tomcruise"
                                          mediaId:@"ITjsb22-EwQ"
@@ -63,6 +64,8 @@
     /*
      We could have created the session in `configureViewer:` - which would work in this simple case. However we need to be sure that the analytics data mediaId is associated with the correct media currently playing. In a UITableView or UICollectionView scenario with multiple and reusable VPKPreviews this delegate method is more robust, as it is called only when the VPKVideoPlayer is about to be invoked.
      */
+    
+    //optional metadata dictionary
     NSDictionary* sampleMetadata = @{@"TestMetadaKey":@"TestMetadaValue"};
     [VPKHeartbeatProvider createSession:preview mediaObject:self.mediaObject metadata:sampleMetadata];
 }
