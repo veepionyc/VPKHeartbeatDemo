@@ -60,7 +60,7 @@
     NSLog(@"tapped %@",tapGestureRecognizer);
 }
 
-- (void)vpkPreview:(VPKPreview *)preview handledTap:(UITapGestureRecognizer *)tapGestureRecognizer {
+- (void)vpkPreview:(VPKPreview <VPKHeartbeatMediaProvider> *)preview handledTap:(UITapGestureRecognizer *)tapGestureRecognizer {
     /*
      We could have created the session in `configureViewer:` - which would work in this simple case. However we need to be sure that the analytics data mediaId is associated with the correct media currently playing. In a UITableView or UICollectionView scenario with multiple and reusable VPKPreviews this delegate method is more robust, as it is called only when the VPKVideoPlayer is about to be invoked.
      */
