@@ -10,7 +10,36 @@
 
 @class ADBMediaHeartbeatConfig;
 @class ADBMediaObject;
-@class VPKPreview;
+
+
+@protocol VPKHeartbeatMediaProvider <NSObject>
+
+/**
+ Length of video in seconds.
+ */
+- (Float64)duration;
+
+/**
+ Current playback time of video in seconds.
+ */
+- (Float64)currentPlaybackTime;
+
+/**
+ QoS dictionary of video.
+ */
+- (nullable NSDictionary*)qualityOfServiceDict;
+
+/**
+ Optional media identifier supplied when initialising a VPKPreview object.
+ */
+- (nullable NSString*)mediaIdentifier;
+
+/**
+ Session identifier fallback if media identifier is unset.
+ */
+- (nonnull NSString*)sessionIdentifier;
+@end
+
 
 
 @interface VPKHeartbeatProvider : NSObject
@@ -27,7 +56,7 @@
  Creates the current session and starts listening for NSNotifications.
  This should be recreated per media object when tracking is required.
  */
-+ (void)createSession:(nonnull VPKPreview*)preview mediaObject:(nonnull ADBMediaObject*)mediaObject;
++ (void)createSession:(nonnull id<VPKHeartbeatMediaProvider>)mediaProvider mediaObject:(nonnull ADBMediaObject*)mediaObject;
 
 /**
  Removes the current session and stops listening for NSNotifications.

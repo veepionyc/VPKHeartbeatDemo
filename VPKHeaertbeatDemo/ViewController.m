@@ -48,7 +48,7 @@
     self.mediaObject =
     [ADBMediaHeartbeat createMediaObjectWithName:@"tomcruise"
                                          mediaId:@"ITjsb22-EwQ"
-                                          length:15
+                                          length:0
                                       streamType:ADBMediaHeartbeatStreamTypeLINEAR];
 }
 
