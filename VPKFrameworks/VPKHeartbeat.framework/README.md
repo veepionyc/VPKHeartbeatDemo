@@ -8,22 +8,33 @@ For details of Adobe analytics refer to:
 Required dependencies:  
 ```AdobeVideoHeartbeatSDK 2.0.1 ```  
 ```AdobeMobileSDK 4.8.4```  
-```VPKit 2.6.0```  
+```VPKit 2.6.1```  
 
 VPKHeartbeat acts as a bridge between the VPKit video player and Adobe/Overture video analytics.  It listens for event notifications from the VPKit player and forwards them to the Adobe Mobile SDK.
 
-VPKHeartbeat  provides a `VPKHeartbeatProvider` object with four class methods.
+VPKHeartbeat  provides a `VPKHeartbeatProvider` object with five class methods.
 
 ```
 + (void)initializeHeartbeat:(nonnull ADBMediaHeartbeatConfig*)heartbeatConfig;
 ```
 VPKHeartbeatProvider must be initialized with a hearbeatConfig object before any tracking can take place. This is application-level data and only needs to be set once. For `heartbeatConfig`  refer to the Adobe documention.
 
-```
-+ (void)createSession:(nonnull VPKPreview*)preview mediaObject:(nonnull ADBMediaObject*)mediaObject;
-```
 
-Creates the current session and starts listening for NSNotifications. This should be recreated per media object when tracking is required. For `ADBMediaHeartbeatConfig`  refer to the Adobe documention.
+
+	+ (nullable VPKMediaObject*)createMediaObjectWithName:(nonnull NSString*)name  
+	                                              mediaId:(nonnull NSString*)mediaId
+	                                           streamType:(nonnull NSString*)streamType;
+
+Creates and returns a `VPKMediaObject` which can be used to subsequently create a `VPKHeartbeat` session. `VPKMediaObject` is a proxy for `ADBMediaObject` which cannot be created until a video is loaded.
+
+
+
+
+	+ (void)createSession:(nonnull id<VPKHeartbeatMediaProvider>)mediaProvider 
+	          mediaObject:(nonnull VPKMediaObject*)mediaObject;
+
+
+Creates the current session and starts listening for NSNotifications. This should be recreated per media object when tracking is required. For `ADBMediaHeartbeatConfig`  refer to the Adobe documention. The `mediaProvider` is any object that confroms to `VPKHeartbeatMediaProvider` protocol and is responsible for passing current playback information from the relevant video player. A `VPKPreview` object conforms to this protocol.
 
 
 ```
