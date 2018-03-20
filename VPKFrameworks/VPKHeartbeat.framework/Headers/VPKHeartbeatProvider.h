@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class ADBMediaHeartbeatConfig;
-@class ADBMediaObject;
-
+@class VPKMediaObject;
 
 @protocol VPKHeartbeatMediaProvider <NSObject>
 
@@ -52,6 +51,16 @@
 
 + (void)initializeHeartbeat:(nonnull ADBMediaHeartbeatConfig*)heartbeatConfig;
 
+
+/**
+ Creates a media object which can be used to subsequently create a session
+ */
+
++ (nullable VPKMediaObject*) createMediaObjectWithName:(nonnull NSString *)name
+                                               mediaId:(nonnull NSString *)mediaId
+                                            streamType:(nonnull NSString *)streamType;
+
+
 /**
  Creates the current session and starts listening for NSNotifications.
  This should be recreated per media object when tracking is required.
@@ -67,7 +76,7 @@
  
  */
 + (void)createSession:(nonnull id<VPKHeartbeatMediaProvider>)mediaProvider
-          mediaObject:(nonnull ADBMediaObject*)mediaObject
+          mediaObject:(nonnull VPKMediaObject*)mediaObject
              metadata:(nullable NSDictionary*)metadata;
 
 /**

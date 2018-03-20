@@ -16,7 +16,7 @@
 
 @property (nonatomic, strong) VPKVeepViewer* vpViewer;
 
-@property (nonatomic, strong) ADBMediaObject* mediaObject;
+@property (nonatomic, strong) VPKMediaObject* mediaObject;
 
 @end
 
@@ -46,10 +46,9 @@
     self.viewerPreview.image = vpkImage;
     
     self.mediaObject =
-    [ADBMediaHeartbeat createMediaObjectWithName:@"tomcruise"
+    [VPKHeartbeatProvider createMediaObjectWithName:@"tomcruise"
                                          mediaId:@"ITjsb22-EwQ"
-                                          length:0
-                                      streamType:ADBMediaHeartbeatStreamTypeLINEAR];
+                            streamType:ADBMediaHeartbeatStreamTypeLINEAR];
 }
 
 
