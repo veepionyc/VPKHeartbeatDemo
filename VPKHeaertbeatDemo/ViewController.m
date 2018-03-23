@@ -35,6 +35,10 @@
 
 }
 
+- (UIInterfaceOrientationMask) supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 #pragma mark - configuration
 
 - (void)configureViewer{
