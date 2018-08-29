@@ -2,7 +2,7 @@
 Demo app using VPKit and VPKHeartbeat frameworks to send Adobe Video Heartbeat analyticis
 
 ## Requirements  
-`VPKit.framework 2.6.0`   
+`VPKit.framework 2.6.3`   
 `VPKHeartbeat.framework 0.1.2`   
 
 (included in this distribution)  
@@ -30,7 +30,7 @@ For details of Video Player callbacks handled by this SDK refer to:
 Required dependencies:  
 ```AdobeVideoHeartbeatSDK 2.0.1 ```  
 ```AdobeMobileSDK 4.8.4```  
-```VPKit 2.6.1```  
+```VPKit 2.6.3```  
 
 VPKHeartbeat acts as a bridge between the VPKit video player and Adobe/Overture video analytics.  It listens for event notifications from the VPKit player and forwards them to the Adobe Mobile SDK.
 
