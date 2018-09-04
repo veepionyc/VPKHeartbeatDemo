@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.source_files = "VPKHeartbeat/**/*.{h,m}"
     s.dependency 'AdobeVideoHeartbeatSDK', '2.0.1'
     s.dependency 'AdobeMobileSDK', '4.8.4'
-#    s.dependency 'VPKit', '2.6.0'
+    s.dependency 'VPKit', '2.6.3'
 
 
 end
