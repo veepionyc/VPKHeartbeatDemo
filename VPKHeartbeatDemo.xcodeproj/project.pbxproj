@@ -20,6 +20,7 @@
 		AB67BB8820196293008E6C4E /* VPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB832019628B008E6C4E /* VPKit.framework */; };
 		AB67BB8920196293008E6C4E /* VPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB832019628B008E6C4E /* VPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB67BB8C20196917008E6C4E /* ViewController_Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB67BB8B20196917008E6C4E /* ViewController_Autolayout.m */; };
+		ABFF5F692176788300C02374 /* ViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF5F682176788300C02374 /* ViewControllerSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,7 +58,8 @@
 		AB67BB832019628B008E6C4E /* VPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VPKit.framework; sourceTree = "<group>"; };
 		AB67BB8A20196917008E6C4E /* ViewController_Autolayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController_Autolayout.h; sourceTree = "<group>"; };
 		AB67BB8B20196917008E6C4E /* ViewController_Autolayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_Autolayout.m; sourceTree = "<group>"; };
-		ABAAA6FB1FC3471F005A2955 /* VPKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VPKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABFF5F672176787200C02374 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ABFF5F682176788300C02374 /* ViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,10 @@
 				AB322C29200E34BD005CE76C /* Heartbeat */,
 				AB1F17BF1C866C3700F740A2 /* AppDelegate.h */,
 				AB1F17C01C866C3700F740A2 /* AppDelegate.m */,
+				ABFF5F672176787200C02374 /* Bridging-Header.h */,
 				AB1F17C21C866C3700F740A2 /* ViewController.h */,
 				AB1F17C31C866C3700F740A2 /* ViewController.m */,
+				ABFF5F682176788300C02374 /* ViewControllerSwift.swift */,
 				AB67BB8A20196917008E6C4E /* ViewController_Autolayout.h */,
 				AB67BB8B20196917008E6C4E /* ViewController_Autolayout.m */,
 				AB1F17C81C866C3700F740A2 /* Assets.xcassets */,
@@ -125,7 +129,6 @@
 				AB1F17CA1C866C3700F740A2 /* LaunchScreen.storyboard */,
 				AB1F17CD1C866C3700F740A2 /* Info.plist */,
 				AB1F17BC1C866C3700F740A2 /* Supporting Files */,
-				ABAAA6FB1FC3471F005A2955 /* VPKitDemo-Bridging-Header.h */,
 			);
 			path = VPKHeartbeatDemo;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				AB322C2C200E34BD005CE76C /* VPKAnalyticsModel.m in Sources */,
 				AB1F17C41C866C3700F740A2 /* ViewController.m in Sources */,
 				AB1F17C11C866C3700F740A2 /* AppDelegate.m in Sources */,
+				ABFF5F692176788300C02374 /* ViewControllerSwift.swift in Sources */,
 				AB1F17BE1C866C3700F740A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +423,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "VPKitDemo/VPKitDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VPKHeartbeatDemo/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -460,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "VPKitDemo/VPKitDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VPKHeartbeatDemo/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <VPKit/VPKit.h>
 
 @class ADBMediaHeartbeatConfig;
 @class VPKMediaObject;
@@ -92,4 +93,8 @@
  */
 
 + (void)setDebugLogging:(BOOL)logging;
+@end
+
+
+@interface VPKPreview (VPKHeartbeat) <VPKHeartbeatMediaProvider>
 @end
