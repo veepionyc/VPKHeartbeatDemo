@@ -16,7 +16,7 @@
 
 @property (nonatomic, strong) VPKVeepViewer* vpViewer;
 
-@property (nonatomic, strong) VPKMediaObject* mediaObject;
+@property (nonatomic, strong, readwrite) VPKMediaObject* mediaObject;
 
 @end
 
