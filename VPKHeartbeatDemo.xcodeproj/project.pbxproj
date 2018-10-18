@@ -15,11 +15,10 @@
 		AB1F17C91C866C3700F740A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1F17C81C866C3700F740A2 /* Assets.xcassets */; };
 		AB1F17CC1C866C3700F740A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1F17CA1C866C3700F740A2 /* LaunchScreen.storyboard */; };
 		AB322C2C200E34BD005CE76C /* VPKAnalyticsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB322C2B200E34BD005CE76C /* VPKAnalyticsModel.m */; };
-		AB67BB8620196290008E6C4E /* VPKHeartbeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */; };
-		AB67BB8720196290008E6C4E /* VPKHeartbeat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB67BB8820196293008E6C4E /* VPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB832019628B008E6C4E /* VPKit.framework */; };
 		AB67BB8920196293008E6C4E /* VPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB832019628B008E6C4E /* VPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB67BB8C20196917008E6C4E /* ViewController_Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB67BB8B20196917008E6C4E /* ViewController_Autolayout.m */; };
+		ABF08150217895B4007D709B /* VPKHeartbeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */; };
 		ABFF5F692176788300C02374 /* ViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF5F682176788300C02374 /* ViewControllerSwift.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AB67BB8720196290008E6C4E /* VPKHeartbeat.framework in Embed Frameworks */,
 				AB67BB8920196293008E6C4E /* VPKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -67,9 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A1992E794FB943856955B3C /* libPods-VPKHeartbeatDemo.a in Frameworks */,
+				ABF08150217895B4007D709B /* VPKHeartbeat.framework in Frameworks */,
 				AB67BB8820196293008E6C4E /* VPKit.framework in Frameworks */,
-				AB67BB8620196290008E6C4E /* VPKHeartbeat.framework in Frameworks */,
+				6A1992E794FB943856955B3C /* libPods-VPKHeartbeatDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +169,7 @@
 				AB1F17B61C866C3700F740A2 /* Frameworks */,
 				AB1F17B71C866C3700F740A2 /* Resources */,
 				AB7E2C121DD3C2BB005CD150 /* Embed Frameworks */,
+				ABF08151217897AE007D709B /* Strip Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +245,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ABF08151217897AE007D709B /* Strip Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/VPKit.framework/strip-frameworks.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -396,7 +409,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Veep The Veeper (2YL8SFLV92)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6R3CG82D75;
 				ENABLE_BITCODE = NO;
@@ -412,7 +425,7 @@
 					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/VPKHeartbeatDemo/Info.plist";
+				INFOPLIST_FILE = VPKHeartbeatDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -438,7 +451,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Veepio Holdings, LLC (6R3CG82D75)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6R3CG82D75;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -453,7 +466,7 @@
 					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/VPKHeartbeatDemo/Info.plist";
+				INFOPLIST_FILE = VPKHeartbeatDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
