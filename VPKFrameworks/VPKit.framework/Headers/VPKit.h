@@ -18,8 +18,8 @@ FOUNDATION_EXPORT const unsigned char VPKitVersionString[];
 
 #import <VPKit/VPKitClass.h>
 #import <VPKit/VPKVeepViewer.h>
-#import <VPKit/VPKVeepEditor.h>
 #import <VPKit/VPKStyles.h>
 #import <VPKit/VPKImage.h>
 #import <VPKit/VPKPublicVeep.h>
 #import <VPKit/VPKPublicEventConstants.h>
+#import <VPKit/VPKWindow.h>

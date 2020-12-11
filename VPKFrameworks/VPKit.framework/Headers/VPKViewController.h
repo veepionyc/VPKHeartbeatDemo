@@ -27,16 +27,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nonnull) UIView* sourceView;
 @property (nonatomic, assign) CGRect toRect;
 @property (nonatomic, assign) CGRect fromRect;
-@property (nonatomic, strong, nonnull) UINavigationBar* navBar;
 @property (nonatomic, strong, nullable) id selectedTrackObserver;
 @property (nonatomic, strong, nonnull) VPKCollectionVC* collectionVC;
 //@property (nonatomic, strong, nullable) NSString* veepId;
 @property (nonatomic, strong, nonnull) VPKBlurTouchView* touchView;
-@property (nonatomic, assign) VPKViewMode mode;
+@property (nonatomic, assign, readonly) VPKViewMode mode;
 @property (nonatomic, strong) VPKVeepFetcher* fetcher;
 @property (nonatomic, strong) VPKStyles* styles;
 @property (nonatomic, assign) BOOL forwardErrors;
 @property (nonatomic, copy) VPKSessionData* sessionData;
+@property (nonatomic, assign) BOOL autoplay;
 
 - (nonnull UIView*)transitioningView;
 - (nonnull UIImageView*)transitioningImageView;
@@ -52,15 +52,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)configureVeepView;
 
 
-- (void)showNavBar:(BOOL)animated;
-- (void)hideNavBar:(BOOL)animated;
+//- (void)showNavBar:(BOOL)animated;
+//- (void)hideNavBar:(BOOL)animated;
 
 - (void)showFooter;
 - (void)showFooter:(nullable void ( ^)(BOOL finished))completion;
 - (void)hideFooter;
 - (void)hideFooter:(nullable void ( ^)(BOOL finished))completion;
-
-
 
 - (void)trackSelected:(nonnull NSString*)trackId;
 
@@ -70,8 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
 //- (nonnull UIBarButtonItem*)nextButton;
 //- (nonnull UIBarButtonItem*)publishButton;
 
-
 - (void)resetCollectionVC;
+
 - (void)dismiss;
 - (void)cancel;
 - (void)back;
