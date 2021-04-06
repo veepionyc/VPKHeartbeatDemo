@@ -5,7 +5,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 
 target 'VPKHeartbeatDemo' do
-    pod 'AdobeVideoHeartbeatSDK', '2.0.1'
-    pod 'AdobeMobileSDK', '4.8.4'
+    pod 'AdobeVideoHeartbeatSDK', '2.1'
+    pod 'AdobeMobileSDK', '4.21.1'
 end
 
