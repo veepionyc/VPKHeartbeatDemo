@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 @class VPKImage;
 @class VPKPreview;
-
+@class VPKPlayerItem;
+@class VPKPlaylist;
 @class VPKPreview;
+@protocol VPKAdHandler;
+
 @protocol VPKPreviewDelegate <NSObject>
 
 - (void)vpkPreviewTouched:(nonnull VPKPreview*)preview image:(nonnull VPKImage*)image;
@@ -36,7 +39,7 @@
  
  If assigned a standard UIImage, (or a VPKImage that doesn't use it's custom initialisers) this class  behaves as a standard UIImageView.
  
- @see VPKImage
+ @see `VPKImage`
  */
 
 
@@ -101,9 +104,20 @@ if YES touching a VPKPreview will invoke the VPKit image viewer for all images. 
 
 
 /**
-autoplay. Default is NO;
+autoplay. Default is YES;
  */
 @property (nonatomic, assign) BOOL autoplay;
+
+/**
+optional video playlist
+ */
+@property (nonatomic, copy, nullable) VPKPlaylist*   playlist;
+
+/**
+optional ad handler
+ */
+@property (nonatomic, weak, nullable) id <VPKAdHandler> adHandler;
+
 
 /**
  Shows the veep content icon.

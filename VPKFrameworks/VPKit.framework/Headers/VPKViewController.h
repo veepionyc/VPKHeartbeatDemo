@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class VPKPlayerItem;
 @class VPKVeepFetcher;
 @class VPKVeepVideoImageView;
 @class VPKCollectionVC;
@@ -17,6 +17,9 @@
 @class VPKVeep;
 @class VPKImage;
 @class VPKSessionData;
+@class VPKPlayerItem;
+@protocol VPKAdHandler;
+
 typedef NS_ENUM(NSInteger, VPKViewMode );
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,7 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nonnull) UIView* sourceView;
 @property (nonatomic, assign) CGRect toRect;
 @property (nonatomic, assign) CGRect fromRect;
-@property (nonatomic, strong, nullable) id selectedTrackObserver;
 @property (nonatomic, strong, nonnull) VPKCollectionVC* collectionVC;
 //@property (nonatomic, strong, nullable) NSString* veepId;
 @property (nonatomic, strong, nonnull) VPKBlurTouchView* touchView;
@@ -35,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) VPKVeepFetcher* fetcher;
 @property (nonatomic, strong) VPKStyles* styles;
 @property (nonatomic, assign) BOOL forwardErrors;
-@property (nonatomic, copy) VPKSessionData* sessionData;
+@property (nonatomic, copy) VPKSessionData* mainSessionData;
 @property (nonatomic, assign) BOOL autoplay;
 
 - (nonnull UIView*)transitioningView;
@@ -52,9 +54,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)configureVeepView;
 
 
-//- (void)showNavBar:(BOOL)animated;
-//- (void)hideNavBar:(BOOL)animated;
-
 - (void)showFooter;
 - (void)showFooter:(nullable void ( ^)(BOOL finished))completion;
 - (void)hideFooter;
@@ -62,11 +61,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)trackSelected:(nonnull NSString*)trackId;
 
-//- (nonnull UIBarButtonItem*)backButton;
-//- (nonnull UIBarButtonItem*)dismissButton;
-//- (nonnull UIBarButtonItem*)cancelButton;
-//- (nonnull UIBarButtonItem*)nextButton;
-//- (nonnull UIBarButtonItem*)publishButton;
 
 - (void)resetCollectionVC;
 
@@ -82,11 +76,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)expandWebView:(NSNotification*)notification;
     
-- (UIEdgeInsets)safeInsets;
-
 - (VPKImage*)vpkImage;
 
-- (void)logVeepView:(VPKVeep*)veep;
+- (void)logVeepView;
 - (void)logVeepSelect:(NSString*)trackId;
 - (void)logProductView:(NSString*)trackId URL:(NSURL*)URL;
 - (void)logProductNavigation:(NSString*)trackId URL:(NSURL*)URL;

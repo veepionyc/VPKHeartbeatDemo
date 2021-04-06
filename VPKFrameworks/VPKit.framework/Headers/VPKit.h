@@ -23,3 +23,5 @@ FOUNDATION_EXPORT const unsigned char VPKitVersionString[];
 #import <VPKit/VPKPublicVeep.h>
 #import <VPKit/VPKPublicEventConstants.h>
 #import <VPKit/VPKWindow.h>
+#import <VPKit/VPKPlayerItem.h>
+#import <VPKit/VPKAdHandler.h>
