@@ -48,15 +48,16 @@ double const VIDEO_LENGTH = 1800;
     [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME
                                          mediaId:VIDEO_ID
                                           length:1200
-                                      streamType:ADBMediaHeartbeatStreamTypeLINEAR];
+                                      streamType:ADBMediaHeartbeatStreamTypeLINEAR
+                                       mediaType:ADBMediaTypeVideo];
     
-    [mediaObject setValue:self.standardVideoMetadata forKey:ADBMediaObjectKeyStandardVideoMetadata];
+    [mediaObject setValue:self.standardMediaMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
     
     return mediaObject;
     
 }
 
-+ (NSDictionary*) standardVideoMetadata {
++ (NSDictionary*) standardMediaMetadata {
     // Sample implementation for using standard metadata keys
     return @{
 //             ADBVideoMetadataKeySHOW:@"Sample show"
