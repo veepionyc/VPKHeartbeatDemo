@@ -1,11 +1,14 @@
-platform :ios, '8.0'
+platform :ios, '11.0'
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/veepionyc/Specs.git'
+use_frameworks!
 
-#use_frameworks!
-
+use_modular_headers!
 
 target 'VPKHeartbeatDemo' do
-    pod 'AdobeVideoHeartbeatSDK', '2.1'
-    pod 'AdobeMobileSDK', '4.21.1'
+    pod 'AdobeMediaSDK', '=2.2.4'
+    pod 'AdobeMobileSDK', '=4.19.2'
+    pod 'VPKit','~>2.9.10'
 end
 
+ 

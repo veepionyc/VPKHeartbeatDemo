@@ -7,6 +7,8 @@
 //
     
 import UIKit
+import AdobeMediaSDK
+import AdobeMobileSDK
 
 @objc class ViewControllerSwift: ViewController ,VPKPreviewPassThroughDelegate {
     

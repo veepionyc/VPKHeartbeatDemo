@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24ED5B105CD958AA87F25C73 /* Pods_VPKHeartbeatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B5E1ADFC78F9E2057F5771 /* Pods_VPKHeartbeatDemo.framework */; };
 		AB1F17BE1C866C3700F740A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1F17BD1C866C3700F740A2 /* main.m */; };
 		AB1F17C11C866C3700F740A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1F17C01C866C3700F740A2 /* AppDelegate.m */; };
 		AB1F17C41C866C3700F740A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1F17C31C866C3700F740A2 /* ViewController.m */; };
@@ -14,12 +15,10 @@
 		AB1F17C91C866C3700F740A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1F17C81C866C3700F740A2 /* Assets.xcassets */; };
 		AB1F17CC1C866C3700F740A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1F17CA1C866C3700F740A2 /* LaunchScreen.storyboard */; };
 		AB322C2C200E34BD005CE76C /* VPKAnalyticsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB322C2B200E34BD005CE76C /* VPKAnalyticsModel.m */; };
-		AB67BB8820196293008E6C4E /* VPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB832019628B008E6C4E /* VPKit.framework */; };
-		AB67BB8920196293008E6C4E /* VPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB832019628B008E6C4E /* VPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB67BB8C20196917008E6C4E /* ViewController_Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB67BB8B20196917008E6C4E /* ViewController_Autolayout.m */; };
-		ABF08150217895B4007D709B /* VPKHeartbeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */; };
+		ABB7E1C326230DA900B05E03 /* VPKHeartbeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */; };
+		ABB7E1C426230DA900B05E03 /* VPKHeartbeat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABFF5F692176788300C02374 /* ViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF5F682176788300C02374 /* ViewControllerSwift.swift */; };
-		DBB5C7130E63F10143F0387D /* libPods-VPKHeartbeatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D6F4B31B7E793AF10098F6 /* libPods-VPKHeartbeatDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AB67BB8920196293008E6C4E /* VPKit.framework in Embed Frameworks */,
+				ABB7E1C426230DA900B05E03 /* VPKHeartbeat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,9 +36,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		10D6F4B31B7E793AF10098F6 /* libPods-VPKHeartbeatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VPKHeartbeatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51FF6E8BDA8FAE8DF9576463 /* Pods-VPKHeartbeatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPKHeartbeatDemo.debug.xcconfig"; path = "Target Support Files/Pods-VPKHeartbeatDemo/Pods-VPKHeartbeatDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		8BA9C93C8350AB2C43B3DA2F /* Pods-VPKHeartbeatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPKHeartbeatDemo.release.xcconfig"; path = "Target Support Files/Pods-VPKHeartbeatDemo/Pods-VPKHeartbeatDemo.release.xcconfig"; sourceTree = "<group>"; };
+		327579C2C0B5AF0D2ECE77E7 /* Pods-VPKHeartbeatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPKHeartbeatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VPKHeartbeatDemo/Pods-VPKHeartbeatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		67B5E1ADFC78F9E2057F5771 /* Pods_VPKHeartbeatDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPKHeartbeatDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C59841CA6E77DE653CEE494 /* Pods-VPKHeartbeatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPKHeartbeatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VPKHeartbeatDemo/Pods-VPKHeartbeatDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AB1F17B91C866C3700F740A2 /* VPKHeartbeatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPKHeartbeatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1F17BD1C866C3700F740A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB1F17BF1C866C3700F740A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		AB322C2A200E34BD005CE76C /* VPKAnalyticsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPKAnalyticsModel.h; sourceTree = "<group>"; };
 		AB322C2B200E34BD005CE76C /* VPKAnalyticsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPKAnalyticsModel.m; sourceTree = "<group>"; };
 		AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VPKHeartbeat.framework; sourceTree = "<group>"; };
-		AB67BB832019628B008E6C4E /* VPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VPKit.framework; sourceTree = "<group>"; };
 		AB67BB8A20196917008E6C4E /* ViewController_Autolayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController_Autolayout.h; sourceTree = "<group>"; };
 		AB67BB8B20196917008E6C4E /* ViewController_Autolayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_Autolayout.m; sourceTree = "<group>"; };
 		ABFF5F672176787200C02374 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -65,19 +63,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF08150217895B4007D709B /* VPKHeartbeat.framework in Frameworks */,
-				AB67BB8820196293008E6C4E /* VPKit.framework in Frameworks */,
-				DBB5C7130E63F10143F0387D /* libPods-VPKHeartbeatDemo.a in Frameworks */,
+				ABB7E1C326230DA900B05E03 /* VPKHeartbeat.framework in Frameworks */,
+				24ED5B105CD958AA87F25C73 /* Pods_VPKHeartbeatDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33969D0076AC8831B2E44252 /* Frameworks */ = {
+		1BD37C1CFE4EE37D9E18C1C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				10D6F4B31B7E793AF10098F6 /* libPods-VPKHeartbeatDemo.a */,
+				327579C2C0B5AF0D2ECE77E7 /* Pods-VPKHeartbeatDemo.debug.xcconfig */,
+				7C59841CA6E77DE653CEE494 /* Pods-VPKHeartbeatDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54DE0DBF416CFA6047AACDA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67B5E1ADFC78F9E2057F5771 /* Pods_VPKHeartbeatDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,8 +94,8 @@
 				AB67BB812019628B008E6C4E /* VPKFrameworks */,
 				AB1F17BB1C866C3700F740A2 /* VPKHeartbeatDemo */,
 				AB1F17BA1C866C3700F740A2 /* Products */,
-				C85FDF3D8FF357DD60928209 /* Pods */,
-				33969D0076AC8831B2E44252 /* Frameworks */,
+				54DE0DBF416CFA6047AACDA0 /* Frameworks */,
+				1BD37C1CFE4EE37D9E18C1C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,19 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				AB67BB822019628B008E6C4E /* VPKHeartbeat.framework */,
-				AB67BB832019628B008E6C4E /* VPKit.framework */,
 			);
 			path = VPKFrameworks;
-			sourceTree = "<group>";
-		};
-		C85FDF3D8FF357DD60928209 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				51FF6E8BDA8FAE8DF9576463 /* Pods-VPKHeartbeatDemo.debug.xcconfig */,
-				8BA9C93C8350AB2C43B3DA2F /* Pods-VPKHeartbeatDemo.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +160,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB1F17DB1C866C3700F740A2 /* Build configuration list for PBXNativeTarget "VPKHeartbeatDemo" */;
 			buildPhases = (
-				F191A13C326C63ED46A6D385 /* [CP] Check Pods Manifest.lock */,
+				97AA09637CFB2E09F6C144CF /* [CP] Check Pods Manifest.lock */,
 				AB1F17B51C866C3700F740A2 /* Sources */,
 				AB1F17B61C866C3700F740A2 /* Frameworks */,
 				AB1F17B71C866C3700F740A2 /* Resources */,
 				AB7E2C121DD3C2BB005CD150 /* Embed Frameworks */,
 				ABF08151217897AE007D709B /* Strip Frameworks */,
+				01B8AA7EA73B5C8E8125564A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +226,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01B8AA7EA73B5C8E8125564A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VPKHeartbeatDemo/Pods-VPKHeartbeatDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AdobeMediaSDK/AdobeMediaSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/AdobeMobileSDK/AdobeMobileSDK.framework",
+				"${PODS_ROOT}/VPKit/VPKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMediaSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMobileSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VPKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VPKHeartbeatDemo/Pods-VPKHeartbeatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97AA09637CFB2E09F6C144CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VPKHeartbeatDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ABF08151217897AE007D709B /* Strip Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,29 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/VPKit.framework/strip-frameworks.sh\"\n";
-		};
-		F191A13C326C63ED46A6D385 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VPKHeartbeatDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/VPKit.framework/strip-frameworks.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -355,7 +369,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -405,13 +418,12 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
 		AB1F17DC1C866C3700F740A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51FF6E8BDA8FAE8DF9576463 /* Pods-VPKHeartbeatDemo.debug.xcconfig */;
+			baseConfigurationReference = 327579C2C0B5AF0D2ECE77E7 /* Pods-VPKHeartbeatDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -434,7 +446,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = VPKHeartbeatDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,13 +459,14 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "VPKHeartbeatDemo/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		AB1F17DD1C866C3700F740A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BA9C93C8350AB2C43B3DA2F /* Pods-VPKHeartbeatDemo.release.xcconfig */;
+			baseConfigurationReference = 7C59841CA6E77DE653CEE494 /* Pods-VPKHeartbeatDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -475,7 +488,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = VPKHeartbeatDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,6 +500,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "VPKHeartbeatDemo/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
+				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

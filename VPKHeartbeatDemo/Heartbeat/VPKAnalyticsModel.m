@@ -5,7 +5,7 @@
 //  Copyright © 2018 VEEPIO LLC. All rights reserved.
 //
 #import "VPKAnalyticsModel.h"
-#import <AdobeVideoHeartbeatSDK/ADBMediaHeartbeat.h>
+#import <AdobeMediaSDK/ADBMediaHeartbeat.h>
 
 
 NSString *const PLAYER_NAME = @"iOS basic media player";
@@ -59,8 +59,8 @@ double const VIDEO_LENGTH = 1800;
 + (NSDictionary*) standardVideoMetadata {
     // Sample implementation for using standard metadata keys
     return @{
-             ADBVideoMetadataKeySHOW:@"Sample show"
-             ,ADBVideoMetadataKeySEASON:@"Sample Season"
+//             ADBVideoMetadataKeySHOW:@"Sample show"
+//             ,ADBVideoMetadataKeySEASON:@"Sample Season"
              };
     
 }

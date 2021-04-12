@@ -9,7 +9,7 @@
 #import <VPKit/VPKit.h>
 #import <VPKHeartbeat/VPKHeartbeat.h>
 #import "VPKAnalyticsModel.h"
-#import <AdobeVideoHeartbeatSDK/ADBMediaHeartbeat.h>
+#import <AdobeMediaSDK/ADBMediaHeartbeat.h>
 #import "ViewController_Autolayout.h"
 @interface ViewController ()<VPKPreviewPassThroughDelegate>
 
