@@ -98,3 +98,9 @@
 
 @interface VPKPreview (VPKHeartbeat) <VPKHeartbeatMediaProvider>
 @end
+
+@interface VPKViewController (VPKHeartbeat)<VPKHeartbeatMediaProvider>
+- (nonnull NSString*)mediaIdentifier;
+- (nonnull NSString*)sessionIdentifier;
+@end
+
